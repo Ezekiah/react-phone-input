@@ -513,7 +513,7 @@ class ReactPhoneInput extends React.Component {
           ref="numberInput"
           type="tel"
           className={inputClasses}
-	  onPaste={()=>false}
+	  onPaste={()=>this.props.onPaste}
         />
         <div ref="flagDropDownButton" className={flagViewClasses} onKeyDown={this.handleKeydown} >
           <div ref='selectedFlag'
